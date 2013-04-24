@@ -32,13 +32,7 @@
   <tbody>
      <%= render @cursos %>
   </tbody>
-  <tfoot> 
-    <tr>
-    
-      <td><%= link_to  image_tag('usuario.gif', :tile  => "Nuevo Curso"),  new_curso_path,  :remote => true %></td>
-      
-    </tr>
-  </tfoot>
+ t
   <tfoot>
     <tr>
      <td>Total Cursos :<input type="text"  id="totalregs" class="span1" value="<%= @cursos.total_entries %>" readonly />
@@ -46,6 +40,11 @@
     </tr>
   </tfoot>
 </table>
+ <tr>
+    
+      <td><%= link_to  image_tag('usuario.gif', :tile  => "Nuevo Curso"),  new_curso_path,  :remote => true %></td>
+      
+    </tr>
 </div>
 <br />
 <br />
