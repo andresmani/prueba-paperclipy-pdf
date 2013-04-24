@@ -29,18 +29,14 @@ ActiveRecord::Schema.define(:version => 20130422150227) do
     t.string   "direccion"
     t.date     "fcha_nacimiento"
     t.integer  "curso_id"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
-    t.string   "imagen_file_name"
-    t.string   "imagen_content_type"
-    t.integer  "imagen_file_size"
-    t.datetime "imagen_updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   add_index "estudiantes", ["curso_id"], :name => "index_estudiantes_on_curso_id"
 
   create_table "horarios", :force => true do |t|
-    t.date     "fecha"
+    t.date     "dia"
     t.time     "hora"
     t.string   "aula"
     t.integer  "materia_id"

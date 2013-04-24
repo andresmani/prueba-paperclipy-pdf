@@ -33,11 +33,6 @@
   <tbody>
      <%= render @horarios %>
   </tbody>
-  <tfoot>
-    <tr>
-      <th><%= link_to image_tag('horario.gif', :tile  => "Nuevo horario"),   new_horario_path, :remote => true %></th>
-    </tr>
-  </tfoot>
  <tfoot>
     <tr>
      <td>Total Horarios :<input type="text"  id="totalregs" class="span1" value="<%= @horarios.total_entries %>" readonly />
@@ -45,6 +40,9 @@
     </tr>
   </tfoot>
 </table>
+ <tr>
+   <th><%= link_to image_tag('horario.gif', :tile  => "Nuevo horario"),   new_horario_path, :remote => true %></th>
+ </tr>
 </div>
 <br />
 <br />
